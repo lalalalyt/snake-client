@@ -11,6 +11,7 @@ const setupInput = function (conn) {
 };
 
 const handleUserInput = function (data) {
+  connection.write("Say: C'est parti!")
   if (data === "\u0003") {
     process.exit();
   }
